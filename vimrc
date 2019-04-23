@@ -10,4 +10,21 @@
 if 1
     execute 'source' fnamemodify(expand('<sfile>'), ':h').'/config/main.vim'
 endif
-" vim:set et sw=2
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set wrap!
+
+" Remapping the movement keys so I can stay on home row as much as possible.
+noremap ; l
+noremap l k
+noremap k j
+noremap j h
+
+"==================================================
+" Splits
+"==================================================
+:map f; <C-w>l
+:map fl <C-w>k
+:map fk <C-w>j
+:map fj <C-w>h
